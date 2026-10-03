@@ -3,6 +3,11 @@
 **Independent Security Researcher**  
 Alberta, Canada
 
+## Selected work
+
+- [MCP filesystem boundary test](https://github.com/Josh-Shultis/security-research-portfolio/tree/main/mcp-filesystem-root-test): a controlled JSON-RPC test of a pinned reference-server version. An in-root read succeeded; outside-root read and write attempts were denied. The repository includes the harness, synthetic fixtures, run instructions, and recorded results. This test did not demonstrate an access-control bypass.
+- [Filesystem root logging proposal](https://github.com/modelcontextprotocol/servers/issues/4912): a public issue requesting clearer reporting of the effective allowed directories after initialization.
+
 ## About Me
 
 I am an independent security researcher focused on the security of AI applications, agents, and connected services.
@@ -22,9 +27,9 @@ I place particular emphasis on provenance: tracing security claims to their supp
 
 ## Recognition & Programs
 
-- **Microsoft Security Response Center (MSRC)** ? Research acknowledged
-- **Google Vulnerability Reward Program (VRP)** ? Active participant
-- **OpenAI Daybreak ? Trusted Access for Cyber** ? Approved participant
+- **Microsoft Security Response Center (MSRC)** — Research acknowledged
+- **Google Vulnerability Reward Program (VRP)** — Active participant
+- **OpenAI Daybreak — Trusted Access for Cyber** — Approved participant
 
 ## Research Tooling
 

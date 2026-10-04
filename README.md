@@ -2,38 +2,48 @@
 
 Independent security researcher focused on AI assistants, agents, tool use, and connected applications.
 
-I investigate how instructions, user authority, and application permissions interact. My approach is to trace a claim from the original input through the observed operation to its resulting state, and keep missing evidence visible.
+I work from evidence, not model output. When I test a security boundary, I try to follow the full chain: what the user asked, what the system actually did, what changed, and which artifacts prove it.
 
-## Research approach
+## Selected work
 
-- Define one hypothesis and vary one input at a time.
-- Preserve original artifacts and correlate requests using IDs and content.
-- Separate requested operations, successful responses, and independently verified persistence.
-- Distinguish verified observations from inference, including negative results and contradictions.
-- Publish only material that is authorized for disclosure and reviewed for sensitive data.
+| Project | What it shows |
+|---|---|
+| [Security RAG demo](https://github.com/Josh-Shultis/security-rag-demo) | A complete synthetic investigation: controlled vulnerable behavior, a fixed control, source-linked evidence, regression tests, and a short walkthrough. |
+| [Evidence Ledger](https://github.com/Josh-Shultis/evidence-ledger) | A local evidence-curation tool that uses hashes, report comparison, and explicit manual-review states so different artifacts are not silently collapsed together. |
 
-[How I evaluate evidence](RESEARCH-METHOD.md)
+Both public projects use synthetic data. Private vendor reports, authenticated captures, and unreleased findings stay out of the public repositories.
 
-## Recognition & Programs
+## Research focus
+
+- AI assistant and agent tool authorization
+- Indirect prompt injection and shared-context behavior
+- Cross-account and ownership boundaries
+- Workspace and connected-app state changes
+- Auditability, provenance, and reproducible evidence
+- Local tooling for large evidence sets
+
+## How I work
+
+- Start with one narrow security question.
+- Preserve original artifacts and exact identifiers.
+- Correlate requests, responses, account context, timestamps, and native application state.
+- Use controls to separate expected behavior from the behavior under test.
+- Keep observations separate from inference.
+- Build reports around what the evidence proves, not around the strongest possible wording.
+
+[Research method](RESEARCH-METHOD.md)
+
+## Recognition & programs
 
 - **Microsoft Security Response Center (MSRC)** — Research acknowledged
 - **Google Vulnerability Reward Program (VRP)** — Active participant
 - **OpenAI Daybreak — Trusted Access for Cyber** — Approved participant
 
-## Work to review
+## What to review first
 
-| Project | What it covers | Access |
-|---|---|---|
-| [Security RAG demo](https://github.com/Josh-Shultis/security-rag-demo) | One synthetic investigation with source-linked retrieval, a vulnerable mock, a fixed control, tests, and a three-minute walkthrough | Public; MIT licensed |
-| [Evidence Ledger](https://github.com/Josh-Shultis/evidence-ledger) | Local Python tool for curating report versions and preserving distinct evidence; public examples are synthetic | Public; MIT licensed |
+If you want to see how I approach a case, start with the [Security RAG case study](https://github.com/Josh-Shultis/security-rag-demo/blob/main/docs/CASE-STUDY.md). It shows the question, decisive evidence, control, fix, and the exact limits of the conclusion.
 
-Both projects use synthetic examples. The Security RAG case demonstrates a deliberate bug in a local mock, not a finding in a real product. Repository links do not imply independent validation or a confirmed vendor vulnerability.
-
-## What I aim to make reviewable
-
-A useful research example includes the question, environment, exact observations, supporting artifacts, limitations, and what the result does **not** establish. A blocked boundary test is worth documenting alongside a successful reproduction.
-
-My interests include prompt injection, tool authorization, account boundaries, evidence provenance, and responsible disclosure. I do not publish private vendor reports, authenticated captures, or unreleased vulnerability details here.
+If you want to see the evidence-handling side, review [Evidence Ledger](https://github.com/Josh-Shultis/evidence-ledger), especially how it preserves different files with the same name and forces manual review when a safe automated choice is not possible.
 
 ## Contact
 

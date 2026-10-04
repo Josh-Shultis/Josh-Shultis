@@ -14,6 +14,12 @@ I investigate how instructions, user authority, and application permissions inte
 
 [How I evaluate evidence](RESEARCH-METHOD.md)
 
+## Recognition & Programs
+
+- **Microsoft Security Response Center (MSRC)** — Research acknowledged
+- **Google Vulnerability Reward Program (VRP)** — Active participant
+- **OpenAI Daybreak — Trusted Access for Cyber** — Approved participant
+
 ## Work to review
 
 | Project | What it covers | Access |

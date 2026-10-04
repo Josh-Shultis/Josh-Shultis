@@ -24,10 +24,10 @@ I investigate how instructions, user authority, and application permissions inte
 
 | Project | What it covers | Access |
 |---|---|---|
+| [Security RAG demo](https://github.com/Josh-Shultis/security-rag-demo) | One synthetic investigation with source-linked retrieval, a vulnerable mock, a fixed control, tests, and a three-minute walkthrough | Public; MIT licensed |
 | [Evidence Ledger](https://github.com/Josh-Shultis/evidence-ledger) | Local Python tool for curating report versions and preserving distinct evidence; public examples are synthetic | Public; MIT licensed |
-| [Security RAG](https://github.com/Josh-Shultis/security-rag) | Local-first evidence retrieval, source references, case-scoped search, and report-review tooling | Private research prototype |
 
-Evidence Ledger is a tool demonstration, not a vulnerability finding. Security RAG is private and requires access. Repository links do not imply independent validation or a confirmed vulnerability.
+Both projects use synthetic examples. The Security RAG case demonstrates a deliberate bug in a local mock, not a finding in a real product. Repository links do not imply independent validation or a confirmed vendor vulnerability.
 
 ## What I aim to make reviewable
 

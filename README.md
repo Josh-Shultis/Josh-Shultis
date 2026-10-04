@@ -1,59 +1,35 @@
 # Josh Shultis
 
-**Independent Security Researcher**  
-Alberta, Canada
+Independent security researcher focused on AI assistants, agents, tool use, and connected applications.
 
-## About Me
+I investigate how instructions, user authority, and application permissions interact. My approach is to trace a claim from the original input through the observed operation to its resulting state, and keep missing evidence visible.
 
-I am an independent security researcher focused on the security of AI applications, agents, and connected services.
+## Research approach
 
-My research interests include:
+- Define one hypothesis and vary one input at a time.
+- Preserve original artifacts and correlate requests using IDs and content.
+- Separate requested operations, successful responses, and independently verified persistence.
+- Distinguish verified observations from inference, including negative results and contradictions.
+- Publish only material that is authorized for disclosure and reviewed for sensitive data.
 
-- Prompt injection and indirect prompt injection
-- AI agent and tool-interaction security
-- Cross-service authorization boundaries
-- Evidence provenance and attack-chain reconstruction
-- Reproducible vulnerability research
-- Responsible disclosure
+[How I evaluate evidence](RESEARCH-METHOD.md)
 
-My methodology combines network traffic analysis, audit-trail correlation, controlled proof-of-concept testing, and evidence reconstruction.
+## Work to review
 
-I place particular emphasis on provenance: tracing security claims to their supporting evidence, validating each step of an observed attack chain, and clearly separating demonstrated behavior from correlation or inference.
+| Project | What it covers | Access |
+|---|---|---|
+| [Security research portfolio](https://github.com/Josh-Shultis/security-research-portfolio) | Synthetic MCP filesystem boundary checks with recorded results and explicit limits | Private; link requires access |
+| [Security RAG](https://github.com/Josh-Shultis/security-rag) | Local-first evidence retrieval, source references, case-scoped search, and report-review tooling | Private research prototype |
 
-## Recognition & Programs
+These repositories are currently private. Public readers can review my methodology here and the [MCP effective-root logging issue](https://github.com/modelcontextprotocol/servers/issues/4912). Repository links do not imply public access, independent validation, or a confirmed vulnerability.
 
-- **Microsoft Security Response Center (MSRC)** — Research acknowledged
-- **Google Vulnerability Reward Program (VRP)** — Active participant
-- **OpenAI Daybreak — Trusted Access for Cyber** — Approved participant
+## What I aim to make reviewable
 
-## Research Tooling
+A useful research example includes the question, environment, exact observations, supporting artifacts, limitations, and what the result does **not** establish. A blocked boundary test is worth documenting alongside a successful reproduction.
 
-I develop private tooling for evidence provenance, report adjudication, and reproducible security-research workflows.
-
-This work includes:
-
-- Deterministic report-variant analysis
-- Claim-to-evidence linking
-- Evidence-authority classification
-- Contradiction detection
-- Reproduction and submission-readiness checks
-- Privacy-preserving research workflows
-
-Public versions of selected tools and examples will use fully synthetic data and will be released only after security and privacy review.
-
-## Professional Background
-
-Before focusing on AI security, I spent more than a decade working in land surveying across legal, municipal, construction, mining, and remote-resource projects.
-
-Surveying requires defensible measurements, independent verification, careful documentation, and a traceable chain from raw observations to final conclusions. I apply that same discipline to security research.
-
-## Responsible Disclosure
-
-I conduct research only on systems and accounts I own or am explicitly authorized to test.
-
-I follow vendor disclosure policies and do not publish unreleased vulnerability details, authenticated captures, private evidence, or sensitive research artifacts without appropriate authorization.
+My interests include prompt injection, tool authorization, account boundaries, evidence provenance, and responsible disclosure. I do not publish private vendor reports, authenticated captures, or unreleased vulnerability details here.
 
 ## Contact
 
 - Email: [joshshultis@gmail.com](mailto:joshshultis@gmail.com)
-- GitHub: [github.com/Josh-Shultis](https://github.com/Josh-Shultis)
+- GitHub: [Josh-Shultis](https://github.com/Josh-Shultis)

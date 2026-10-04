@@ -24,10 +24,10 @@ I investigate how instructions, user authority, and application permissions inte
 
 | Project | What it covers | Access |
 |---|---|---|
-| [Security research portfolio](https://github.com/Josh-Shultis/security-research-portfolio) | Synthetic MCP filesystem boundary checks with recorded results and explicit limits | Private; link requires access |
+| [Evidence Ledger](https://github.com/Josh-Shultis/evidence-ledger) | Local Python tool for curating report versions and preserving distinct evidence; public examples are synthetic | Public; MIT licensed |
 | [Security RAG](https://github.com/Josh-Shultis/security-rag) | Local-first evidence retrieval, source references, case-scoped search, and report-review tooling | Private research prototype |
 
-These repositories are currently private. Public readers can review my methodology here and the [MCP effective-root logging issue](https://github.com/modelcontextprotocol/servers/issues/4912). Repository links do not imply public access, independent validation, or a confirmed vulnerability.
+Evidence Ledger is a tool demonstration, not a vulnerability finding. Security RAG is private and requires access. Repository links do not imply independent validation or a confirmed vulnerability.
 
 ## What I aim to make reviewable
 

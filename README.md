@@ -1,4 +1,6 @@
-# Josh Shultis
+# Josh Shultis — AI Security Research & Evidence-First Method
+
+This is the public researcher profile and navigation page. It describes research focus and links to selected public, synthetic projects; it is not a code or evidence-processing platform.
 
 Independent security researcher focused on AI assistants, agents, tool use, and connected applications.
 

@@ -15,6 +15,10 @@ I work from evidence, not model output. When I test a security boundary, I try t
 
 Both public projects use synthetic data. Private vendor reports, authenticated captures, and unreleased findings stay out of the public repositories.
 
+## Open-source contributions
+
+- **MCP filesystem effective-root logging ([issue #4912](https://github.com/modelcontextprotocol/servers/issues/4912))** — I identified and documented an operator-visibility gap: after client-provided MCP Roots changed the effective filesystem allowlist, the server logged a count but did not provide one clear summary of the active directories and their source. I retested the access-control behavior on Ubuntu and Windows and confirmed the tested restrictions continued to work; I did not report an access-control bypass. The maintainer implemented the requested logging in [PR #5390](https://github.com/modelcontextprotocol/servers/pull/5390), which was merged into `v2/main`. The maintainer closed issue #4912 as completed and identified v2.3.0 as the release milestone. This was an accepted operator-observability improvement; the merged implementation was authored by the project maintainer.
+
 ## Research focus
 
 - AI assistant and agent tool authorization

@@ -17,6 +17,10 @@ I work from evidence, not model output. When I test a security boundary, I follo
 
 Both public projects use synthetic data. Private vendor reports, authenticated captures, active payloads, and unreleased findings stay out of the public repositories.
 
+## Open-source contribution
+
+- **MCP filesystem effective-root logging ([issue #4912](https://github.com/modelcontextprotocol/servers/issues/4912))** — I reported an operator-visibility gap in the filesystem server's logging and supplied follow-up tests on Ubuntu and Windows. The tested access restrictions continued to work; I did not report an access-control bypass. Maintainer Cliff Hall authored [PR #5390](https://github.com/modelcontextprotocol/servers/pull/5390), which merged on October 29, 2026. The repository's v2.3.0 release was published November 4 with filesystem package version 2.2.0; the [filesystem changelog](https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/CHANGELOG.md) lists #5390 and commit `6017ed3`. I contributed the issue report, reproduction, and cross-platform follow-up testing, not the merged implementation.
+
 ## Research focus
 
 - AI agent and assistant tool authorization
